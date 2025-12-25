@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 
 
 export default defineConfig({
-  base: 'https://github.com/kuzhalogi/datasci-portfolio.git',
+  base: '/datasci-portfolio/',
   plugins: [react()],
 });

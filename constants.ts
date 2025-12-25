@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
     shortDescription: 'Deep learning workflow that creates audio from text prompts.',
     fullDescription: 'Built a reproducible audio generation workflow using a VAE to map audio into a latent space and a diffusion model conditioned on text embeddings. Managed data loading, preprocessing, structured training runs, and evaluations of audio quality.',
     technologies: ['PyTorch', 'VAE', 'Diffusion Models', 'Librosa'],
-    imageUrl: 'photos/Text-to-Music.png',
+    imageUrl: './images/Text-to-Music.png',
     features: ['Audio preprocessing', 'Latent space mapping', 'Text conditioned generation'],
     githubUrl: 'https://github.com/kuzhalogi/text2music.git'
   },
@@ -31,7 +31,7 @@ export const PROJECTS: Project[] = [
     shortDescription: 'End to end pipeline for predicting equipment failures.',
     fullDescription: 'Developed a modular workflow with automated ingestion, validation, model training, and real time inference. Added a Streamlit interface for user interaction and a FastAPI service for predictions. Added tracking dashboards with Grafana and used Docker for a reproducible setup.',
     technologies: ['Scikit-learn','Python', 'FastAPI', 'Streamlit', 'Grafana', 'Airflow', 'GreatExpectattion'],
-    imageUrl: 'photos/Benefits-of-Machine-Learning-for-Predictive-Maintenance.png',
+    imageUrl: './images/Benefits-of-Machine-Learning-for-Predictive-Maintenance.png',
     features: ['Automated retraining pipeline', 'SHAP value explainability dashboard', 'Drift detection'],
     githubUrl: 'https://github.com/kuzhalogi/EquipmentFailurePred.git'
   },
@@ -42,7 +42,7 @@ export const PROJECTS: Project[] = [
     shortDescription: 'Power BI dashboards for retail sales patterns.',
     fullDescription: 'Cleaned a dataset of more than twelve thousand records, handled missing values, and engineered features focused on customer revenue and category performance. Built interactive Power BI reports to support decisions on product strategy and sales channel performance.',
     technologies: ['Pandas', 'Power BI', 'SQL'],
-    imageUrl: 'photos/customer_behavior_data_analytics.jpg',
+    imageUrl: './images/customer_behavior_data_analytics.jpg',
     features: ['Real-time revenue tracking', 'Customer segmentation clustering visualization', 'Inventory forecasting'],
     githubUrl: 'https://github.com/kuzhalogi/Retail-Sales-Analysis.git'
   },
@@ -53,7 +53,7 @@ export const PROJECTS: Project[] = [
     shortDescription: 'CNN model that classifies plant leaf diseases.',
     fullDescription: 'Built a lightweight CNN that predicts three plant disease classes using a dataset of maize rust, potato early blight, and tomato bacterial spot images. The workflow includes preprocessing, augmentation, training, evaluation, and model export. The repository includes saved model files, weights, and the full training notebook.',
     technologies: ['CNN', 'Keras', 'Python'],
-    imageUrl: 'photos/early_blight_plants.jpg',
+    imageUrl: './images/early_blight_plants.jpg',
     features: ['Three class disease prediction', 'Lightweight architecture', 'Training notebook'],
     githubUrl: 'https://github.com/kuzhalogi/ML_Vision_Projects/tree/main/Dead_Plant_Prediction'
   },
@@ -64,7 +64,7 @@ export const PROJECTS: Project[] = [
     shortDescription: 'YOLOv8 model for detecting pandas in images.',
     fullDescription: 'Developed a YOLOv8 workflow to detect pandas using annotated datasets in YOLO format. The project includes scripts for converting labels, training runs, validation steps, and a notebook for inference and result visualization.',
     technologies: ['YOLOv8', 'Python', 'Ultralytics'],
-    imageUrl: 'photos/Panda.jpg',
+    imageUrl: './images/Panda.jpg',
     features: ['YOLO annotation pipeline', 'Training and validation setup', 'Inference notebook'],
     githubUrl: 'https://github.com/kuzhalogi/ML_Vision_Projects/tree/main/Panda_detection'
   }
