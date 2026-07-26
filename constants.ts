@@ -10,18 +10,26 @@ import retailImg from './images/retail-sales.svg';
 
 export const PORTFOLIO_OWNER = "Kuzhalogi Murthy";
 export const PORTFOLIO_ROLE = "Data Science & Analytics";
-export const PORTFOLIO_BIO = "Data analyst and machine learning practitioner. I build reliable, reproducible data pipelines and ML applications, and turn complex data into clear, useful decisions.";
+export const PORTFOLIO_BIO = "I build data pipelines with Airflow and dbt, cloud infrastructure as code on AWS, and deep-learning models in PyTorch.";
 
-export const AVAILABILITY = "Available for CDI from September 8, 2026";
+// Single source of truth for availability. It updates itself: before the
+// start date it shows a month, and afterwards it flips to "available now",
+// so the site never displays a stale exact day.
+const AVAILABILITY_START = new Date(2026, 8, 8); // 8 September 2026 (month is 0-indexed)
+export const IS_AVAILABLE_NOW = new Date() >= AVAILABILITY_START;
+export const AVAILABILITY = IS_AVAILABLE_NOW
+  ? "Available now for a CDI in Europe"
+  : "Available for a CDI in Europe, from September 2026";
+export const AVAILABILITY_SENTENCE = IS_AVAILABLE_NOW
+  ? "I'm looking for a permanent (CDI) role in data science or analytics, available now, anywhere in Europe."
+  : "I'm looking for a permanent (CDI) role in data science or analytics, anywhere in Europe, starting September 2026.";
 export const LOCATION = "Ivry-sur-Seine, Paris area";
-export const EMAIL = "kuzhalogi.murthy@epita.fr";
+export const EMAIL = "kuzhalogiyogis@gmail.com";
 export const GITHUB_URL = "https://github.com/kuzhalogi";
 export const LINKEDIN_URL = "https://linkedin.com/in/mkuzhalogi";
 
 export const ABOUT_PARAGRAPHS: string[] = [
-  "I'm a data science and analytics practitioner finishing a Master of Computer Science at EPITA in Paris, and currently interning as a Data Analyst at Groupe Ishitva. I build end to end data systems, from ingestion and validation through modelling, deployment, and monitoring, with a focus on reproducibility and dependable results.",
-  "My recent work spans cloud infrastructure as code, ELT pipelines with dbt and Airflow, deep learning segmentation, and generative audio. I care about data quality, measurable model performance, and clear communication about what a project does and does not show.",
-  "My earlier background in mechanical engineering keeps me grounded in real world systems, and I enjoy learning new tools through steady, hands on practice.",
+  "I'm finishing a Master of Computer Science in data science and analytics at EPITA in Paris, and currently a data analyst intern at Groupe Ishitva. Before my Master's I spent about 18 months at Cognizant supporting production databases, and I first trained as a mechanical engineer.",
 ];
 
 export const SKILL_GROUPS: SkillGroup[] = [
@@ -40,8 +48,17 @@ export const EXPERIENCE: Experience[] = [
     period: 'Mar 2026 – Sep 2026',
     location: 'Paris, France',
     points: [
-      'Building data workflows and analysis to support decision making.',
-      'Turning raw operational data into clear, reliable reporting.',
+      'Built the analysis and reporting environment for an international innovation summit, covering startup applications, marketing, and registrations.',
+    ],
+  },
+  {
+    role: 'Programming Analyst',
+    company: 'Cognizant Technology Solutions',
+    period: 'Apr 2022 – Sep 2023',
+    location: 'India',
+    points: [
+      'Supported production databases for a cloud infrastructure services team, handling incidents raised over email and Teams.',
+      'Diagnosed and fixed issues from Oracle logs using SQL, PL/SQL, and Bash, and optimised queries with proactive monitoring.',
     ],
   },
 ];
@@ -61,10 +78,10 @@ export const EDUCATION: Education[] = [
 ];
 
 export const LANGUAGES: Language[] = [
-  { name: 'Tamil', level: 'Native' },
-  { name: 'English', level: 'Fluent' },
-  { name: 'French', level: 'B1 (TFI)' },
-  { name: 'German', level: 'Beginner' },
+  { name: 'Tamil', level: 'native' },
+  { name: 'English', level: 'fluent' },
+  { name: 'French', level: 'B1' },
+  { name: 'German', level: 'basics' },
 ];
 
 export const PROJECTS: Project[] = [
