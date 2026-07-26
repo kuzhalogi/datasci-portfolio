@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Text to music generation cover">
+  <defs>
+    <linearGradient id="bgM" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1C1917"/>
+      <stop offset="1" stop-color="#0C0A09"/>
+    </linearGradient>
+    <pattern id="dotsM" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#292524"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgM)"/>
+  <rect width="800" height="500" fill="url(#dotsM)"/>
+  <circle cx="680" cy="410" r="220" fill="#C2410C" opacity="0.10"/>
+
+  <!-- prompt box -->
+  <rect x="120" y="210" width="220" height="80" rx="14" fill="#171310" stroke="#C2410C" stroke-width="4"/>
+  <line x1="146" y1="242" x2="280" y2="242" stroke="#78716C" stroke-width="6" stroke-linecap="round"/>
+  <line x1="146" y1="262" x2="240" y2="262" stroke="#57534E" stroke-width="6" stroke-linecap="round"/>
+  <rect x="288" y="230" width="5" height="30" rx="2" fill="#EA580C"/>
+
+  <!-- arrow -->
+  <g fill="none" stroke="#78716C" stroke-width="5" stroke-linecap="round">
+    <line x1="360" y1="250" x2="430" y2="250"/>
+    <polyline points="418,240 432,250 418,260"/>
+  </g>
+
+  <!-- waveform -->
+  <g stroke-linecap="round">
+    <line x1="470" y1="250" x2="470" y2="250" stroke="#C2410C" stroke-width="12"/>
+    <line x1="500" y1="216" x2="500" y2="284" stroke="#C2410C" stroke-width="12"/>
+    <line x1="530" y1="180" x2="530" y2="320" stroke="#EA580C" stroke-width="12"/>
+    <line x1="560" y1="230" x2="560" y2="270" stroke="#C2410C" stroke-width="12"/>
+    <line x1="590" y1="150" x2="590" y2="350" stroke="#EA580C" stroke-width="12"/>
+    <line x1="620" y1="205" x2="620" y2="295" stroke="#C2410C" stroke-width="12"/>
+    <line x1="650" y1="185" x2="650" y2="315" stroke="#EA580C" stroke-width="12"/>
+    <line x1="680" y1="235" x2="680" y2="265" stroke="#C2410C" stroke-width="12"/>
+  </g>
+
+  <!-- music note -->
+  <g transform="translate(560 380)" fill="#FAFAF9">
+    <rect x="18" y="-44" width="5" height="50" rx="2"/>
+    <path d="M23 -44 l26 -8 v12 l-26 8 z"/>
+    <circle cx="10" cy="6" r="11"/>
+    <circle cx="49" cy="-24" r="9"/>
+  </g>
+</svg>

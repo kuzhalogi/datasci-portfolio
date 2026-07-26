@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="CFRP micrograph segmentation cover">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1C1917"/>
+      <stop offset="1" stop-color="#0C0A09"/>
+    </linearGradient>
+    <clipPath id="frame">
+      <rect x="250" y="110" width="300" height="280" rx="14"/>
+    </clipPath>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg3)"/>
+  <circle cx="680" cy="120" r="200" fill="#C2410C" opacity="0.10"/>
+
+  <!-- micrograph panel: fibers as circles -->
+  <g clip-path="url(#frame)">
+    <rect x="250" y="110" width="300" height="280" fill="#171310"/>
+    <g fill="none" stroke="#57534E" stroke-width="3">
+      <circle cx="290" cy="150" r="14"/><circle cx="330" cy="180" r="14"/><circle cx="300" cy="220" r="14"/>
+      <circle cx="270" cy="270" r="14"/><circle cx="330" cy="300" r="14"/><circle cx="300" cy="350" r="14"/>
+      <circle cx="380" cy="150" r="14"/><circle cx="420" cy="190" r="14"/><circle cx="390" cy="240" r="14"/>
+    </g>
+    <!-- segmented region (highlighted fibers) -->
+    <g fill="#C2410C" opacity="0.85">
+      <circle cx="440" cy="150" r="14"/><circle cx="480" cy="185" r="14"/><circle cx="460" cy="235" r="14"/>
+      <circle cx="500" cy="270" r="14"/><circle cx="450" cy="300" r="14"/><circle cx="490" cy="345" r="14"/>
+      <circle cx="410" cy="330" r="14"/>
+    </g>
+    <!-- segmentation mask boundary -->
+    <path d="M418 120 q60 20 60 120 q-4 80 -40 140" fill="none" stroke="#EA580C" stroke-width="4" stroke-dasharray="10 9" stroke-linecap="round"/>
+  </g>
+
+  <!-- panel frame -->
+  <rect x="250" y="110" width="300" height="280" rx="14" fill="none" stroke="#C2410C" stroke-width="5"/>
+
+  <!-- grid ticks around frame -->
+  <g stroke="#44403C" stroke-width="2">
+    <line x1="250" y1="180" x2="230" y2="180"/><line x1="250" y1="250" x2="230" y2="250"/><line x1="250" y1="320" x2="230" y2="320"/>
+    <line x1="550" y1="180" x2="570" y2="180"/><line x1="550" y1="250" x2="570" y2="250"/><line x1="550" y1="320" x2="570" y2="320"/>
+  </g>
+</svg>

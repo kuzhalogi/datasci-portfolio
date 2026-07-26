@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Panda object detection cover">
+  <defs>
+    <linearGradient id="bgP" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1C1917"/>
+      <stop offset="1" stop-color="#0C0A09"/>
+    </linearGradient>
+    <pattern id="dotsP" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#292524"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgP)"/>
+  <rect width="800" height="500" fill="url(#dotsP)"/>
+  <circle cx="150" cy="120" r="200" fill="#C2410C" opacity="0.10"/>
+
+  <!-- panda subject (abstract) -->
+  <g transform="translate(400 275)">
+    <circle cx="0" cy="0" r="86" fill="#FAFAF9"/>
+    <!-- ears -->
+    <circle cx="-60" cy="-62" r="26" fill="#292524"/>
+    <circle cx="60" cy="-62" r="26" fill="#292524"/>
+    <!-- eyes -->
+    <ellipse cx="-30" cy="-8" rx="18" ry="24" fill="#292524" transform="rotate(-18 -30 -8)"/>
+    <ellipse cx="30" cy="-8" rx="18" ry="24" fill="#292524" transform="rotate(18 30 -8)"/>
+    <circle cx="-30" cy="-6" r="6" fill="#FAFAF9"/>
+    <circle cx="30" cy="-6" r="6" fill="#FAFAF9"/>
+    <!-- nose + mouth -->
+    <ellipse cx="0" cy="34" rx="11" ry="8" fill="#292524"/>
+    <path d="M0 42 v10 M0 52 q-14 8 -26 2 M0 52 q14 8 26 2" fill="none" stroke="#292524" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- detection bounding box (corner brackets) -->
+  <g fill="none" stroke="#EA580C" stroke-width="6" stroke-linecap="round">
+    <polyline points="270,150 270,120 300,120"/>
+    <polyline points="500,120 530,120 530,150"/>
+    <polyline points="530,400 530,430 500,430"/>
+    <polyline points="300,430 270,430 270,400"/>
+  </g>
+  <rect x="270" y="120" width="260" height="310" fill="none" stroke="#C2410C" stroke-width="2" stroke-dasharray="4 8" opacity="0.6"/>
+
+  <!-- confidence label -->
+  <g>
+    <rect x="270" y="92" width="132" height="30" rx="4" fill="#C2410C"/>
+    <text x="284" y="113" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#FAFAF9">panda 0.98</text>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="France energy ELT pipeline cover">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1C1917"/>
+      <stop offset="1" stop-color="#0C0A09"/>
+    </linearGradient>
+    <pattern id="dots2" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#292524"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg2)"/>
+  <rect width="800" height="500" fill="url(#dots2)"/>
+  <circle cx="120" cy="90" r="200" fill="#C2410C" opacity="0.10"/>
+
+  <!-- energy waveform -->
+  <polyline points="70,150 150,150 190,110 250,190 310,120 370,170 430,120 490,190 550,110 620,150 730,150"
+            fill="none" stroke="#57534E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ELT stages -->
+  <g font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="30" text-anchor="middle">
+    <!-- Extract: API source -->
+    <circle cx="150" cy="320" r="46" fill="#0C0A09" stroke="#C2410C" stroke-width="5"/>
+    <text x="150" y="331" fill="#EA580C">E</text>
+    <!-- Load: database cylinder -->
+    <g transform="translate(400 320)">
+      <ellipse cx="0" cy="-30" rx="46" ry="16" fill="#0C0A09" stroke="#C2410C" stroke-width="5"/>
+      <path d="M-46 -30 v60 a46 16 0 0 0 92 0 v-60" fill="#0C0A09" stroke="#C2410C" stroke-width="5"/>
+      <path d="M-46 0 a46 16 0 0 0 92 0" fill="none" stroke="#C2410C" stroke-width="5"/>
+      <text x="0" y="12" fill="#EA580C">L</text>
+    </g>
+    <!-- Transform: star schema / chart -->
+    <circle cx="650" cy="320" r="46" fill="#C2410C" stroke="#C2410C" stroke-width="5"/>
+    <text x="650" y="331" fill="#FAFAF9">T</text>
+  </g>
+
+  <!-- flow arrows -->
+  <g fill="none" stroke="#78716C" stroke-width="4" stroke-linecap="round">
+    <line x1="205" y1="320" x2="338" y2="320"/>
+    <polyline points="330,312 342,320 330,328"/>
+    <line x1="458" y1="320" x2="595" y2="320"/>
+    <polyline points="587,312 599,320 587,328"/>
+  </g>
+</svg>
